@@ -1,0 +1,17 @@
+  server:
+    port: 9002
+  spring:
+    datasource:
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      url: jdbc:mysql:///security_authority?characterEncoding=utf8&useSSL=true&useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=Asia/Shanghai
+      username: root
+      password: root
+    main:
+      allow-bean-definition-overriding: true
+  mybatis:
+    type-aliases-package: com.exmpale.domain
+    configuration:
+      map-underscore-to-camel-case: true
+  logging:
+    level:
+      com.example: debug
